@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentalidade Milionária • Página Oficial</title>
+
+  <!-- TIKTOK PIXEL -->
+  <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject = t;
+      var ttq = w[t] = w[t] || [];
+      ttq.methods = ["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];
+      ttq.setAndDefer = function(t, e) {
+        t[e] = function() {
+          t.push([e].concat(Array.prototype.slice.call(arguments,0)))
+        }
+      };
+      for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+      ttq.instance = function(t) {
+        var e = ttq._i[t] || [];
+        for (var n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+        return e
+      };
+      ttq.load = function(e, n) {
+        var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+        ttq._i = ttq._i || {};
+        ttq._i[e] = [];
+        ttq._i[e]._u = i;
+        ttq._t = ttq._t || {};
+        ttq._t[e] = +new Date;
+        ttq._o = ttq._o || {};
+        ttq._o[e] = n || {};
+        var o = d.createElement("script");
+        o.type = "text/javascript";
+        o.async = !0;
+        o.src = i + "?sdkid=" + e + "&lib=" + t;
+        var a = d.getElementsByTagName("script")[0];
+        a.parentNode.insertBefore(o, a)
+      };
+
+      ttq.load('D4FMUEBC77U4IAHDG62G');
+      ttq.page();
+    }(window, document, 'ttq');
+  </script>
+
+  <style>
+    :root {
+      --gold: #d4af37;
+      --gold-soft: #f6e27a;
+      --dark: #050505;
+      --text: #ffffff;
+      --text-sec: #c7c7c7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      color: var(--text);
+      background: #000 url("bg-raios.jpg") center top / cover fixed no-repeat;
+      overflow-x: hidden;
+    }
+
+    .overlay {
+      background: radial-gradient(circle at top, rgba(0,0,0,0.4), rgba(0,0,0,0.92));
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px 16px 60px;
+    }
+
+    /* HEADER / PERFIL */
+    header {
+      text-align: center;
+      padding: 26px 10px 10px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid var(--gold-soft);
+      box-shadow: 0 0 25px rgba(212,175,55,0.9);
+      object-fit: cover;
+      background: #000;
+    }
+
+    .logo-title {
+      margin-top: 14px;
+      font-size: 1.9rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+      background: linear-gradient(90deg, var(--gold-soft), var(--gold));
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 16px rgba(212,175,55,0.9);
+    }
+
+    .logo-sub {
+      margin-top: 6px;
+      font-size: .9rem;
+      color: var(--text-sec);
+    }
+
+    /* HERO */
+    .hero {
+      margin-top: 28px;
+      padding: 26px 18px 30px;
+      text-align: center;
+      background: radial-gradient(circle at top, rgba(0,0,0,0.4), rgba(0,0,0,0.85));
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 0 30px rgba(0,0,0,0.7);
+      backdrop-filter: blur(6px);
+    }
+
+    .hero h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--gold-soft), var(--gold));
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: var(--text-sec);
+      line-height: 1.5;
+    }
+
+    .btn-main {
+      margin-top: 22px;
+      padding: 14px 32px;
+      border-radius: 999px;
+      border: none;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #000;
+      background: linear-gradient(90deg, var(--gold-soft), var(--gold));
+      box-shadow: 0 0 24px rgba(212,175,55,0.9);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .btn-main:hover {
+      transform: translateY(-1px) scale(1.02);
+      box-shadow: 0 0 30px rgba(212,175,55,1);
+    }
+
+    /* SEÇÕES */
+    section {
+      margin-top: 28px;
+      padding: 22px 18px 22px;
+      border-radius: 18px;
+      background: rgba(0,0,0,0.82);
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 0 22px rgba(0,0,0,0.8);
+      backdrop-filter: blur(4px);
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--gold-soft), var(--gold));
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 10px;
+    }
+
+    section p.lead {
+      font-size: .95rem;
+      color: var(--text-sec);
+      margin-bottom: 4px;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 12px;
+    }
+
+    ul li {
+      margin: 7px 0;
+      color: var(--text);
+      font-size: .97rem;
+      line-height: 1.5;
+    }
+
+    ul li::before {
+      content: "⚡ ";
+      color: var(--gold-soft);
+    }
+
+    /* RESULTADOS - MOCKUP DE PRINTS */
+    .results-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    @media (min-width: 720px) {
+      .results-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .result-card {
+      background: radial-gradient(circle at top, #141414, #050505);
+      border-radius: 16px;
+      padding: 14px 14px 16px;
+      border: 1px solid rgba(255,255,255,0.04);
+      box-shadow: 0 0 22px rgba(0,0,0,0.9);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .result-tag {
+      position: absolute;
+      top: 10px;
+      left: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: .72rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      background: rgba(0,0,0,0.7);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--gold-soft);
+    }
+
+    .result-phone {
+      margin-top: 22px;
+      background: linear-gradient(135deg, #0b0b0b, #111827);
+      border-radius: 18px;
+      padding: 10px 10px 12px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .phone-status {
+      display: flex;
+      justify-content: space-between;
+      font-size: .72rem;
+      color: #9ca3af;
+      margin-bottom: 6px;
+    }
+
+    .phone-title {
+      font-size: .82rem;
+      color: #e5e7eb;
+      margin-bottom: 4px;
+    }
+
+    .notif-list {
+      margin-top: 6px;
+      list-style: none;
+    }
+
+    .notif-item {
+      margin: 4px 0;
+      padding: 6px 8px;
+      border-radius: 10px;
+      background: rgba(15,23,42,0.96);
+      border: 1px solid rgba(148,163,184,0.35);
+      font-size: .8rem;
+      color: #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .notif-label {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: .72rem;
+      font-weight: 600;
+      color: #022c22;
+      background: #22c55e;
+    }
+
+    .notif-meta {
+      font-size: .7rem;
+      color: #9ca3af;
+    }
+
+    .result-caption {
+      margin-top: 12px;
+      font-size: .8rem;
+      color: var(--text-sec);
+    }
+
+    /* PLANOS */
+    .card-plan {
+      margin-top: 16px;
+      padding: 18px 16px 18px;
+      border-radius: 16px;
+      background: radial-gradient(circle at top left, rgba(212,175,55,0.12), rgba(0,0,0,0.95));
+      border: 1px solid rgba(212,175,55,0.28);
+      box-shadow: 0 0 22px rgba(0,0,0,0.9);
+    }
+
+    .card-plan h3 {
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .price {
+      margin: 6px 0 8px;
+      font-size: 1.7rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--gold-soft), var(--gold));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .card-plan p {
+      font-size: .9rem;
+      color: var(--text-sec);
+      line-height: 1.5;
+    }
+
+    .btn-plan {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: .9rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
+      background: linear-gradient(90deg, var(--gold-soft), var(--gold));
+      box-shadow: 0 0 22px rgba(212,175,55,1);
+      transition: transform .16s ease, box-shadow .16s ease;
+    }
+
+    .btn-plan:hover {
+      transform: translateY(-1px) scale(1.02);
+      box-shadow: 0 0 28px rgba(212,175,55,1);
+    }
+
+    /* RODAPÉ */
+    footer {
+      text-align: center;
+      font-size: .8rem;
+      color: var(--text-sec);
+      padding: 24px 14px 10px;
+    }
+
+    /* BOTÃO FLUTUANTE MOBILE */
+    .float-cta {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--gold-soft), var(--gold));
+      color: #000;
+      font-size: .86rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 0 24px rgba(212,175,55,1);
+      z-index: 40;
+    }
+
+    @media (min-width: 768px) {
+      .float-cta { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <a href="#planos" class="float-cta">Começar agora →</a>
+
+    <main>
+      <header>
+        <!-- sua foto de perfil: salve como "perfil-mr.jpg" -->
+        <img src="perfil-mr.jpg" alt="Perfil Mr.Digital" class="profile-img" />
+        <div class="logo-title">MENTALIDADE MILIONÁRIA</div>
+        <div class="logo-sub">Disciplina • Rotina • Liberdade</div>
+      </header>
+
+      <section class="hero">
+        <h1>A virada que muda tudo</h1>
+        <p>
+          Um método direto, poderoso e sem enrolação para construir disciplina,
+          rotina e mentalidade forte — mesmo começando do zero.
+        </p>
+        <button class="btn-main" onclick="document.getElementById('planos').scrollIntoView({behavior:'smooth'})">
+          Quero começar →
+        </button>
+      </section>
+
+      <section id="porque">
+        <h2>Por que funciona</h2>
+        <p class="lead">Sem promessas vazias. Apenas comportamento real e execução diária.</p>
+        <ul>
+          <li>Disciplina mesmo nos dias em que a motivação não aparece.</li>
+          <li>Rotina simples, direta, que cabe na vida real.</li>
+          <li>Foco em ação diária, não em frases bonitas.</li>
+          <li>Alinha mente, hábitos e dinheiro na mesma direção.</li>
+          <li>Desenhado para quem está cansado de começar e parar.</li>
+        </ul>
+      </section>
+
+      <section id="resultados">
+        <h2>Resultados reais (simulados)</h2>
+        <p class="lead">
+          Ilustrações de como ficam as notificações quando você monta uma estrutura validada
+          e mantém a disciplina.
+        </p>
+
+        <div class="results-grid">
+          <!-- CARD 1 -->
+          <div class="result-card">
+            <span class="result-tag">Últimos 7 dias</span>
+            <div class="result-phone">
+              <div class="phone-status">
+                <span>23:21 • Kiwify</span>
+                <span>4G ▴</span>
+              </div>
+              <div class="phone-title">Central de notificações</div>
+              <ul class="notif-list">
+                <li class="notif-item">
+                  <span class="notif-label">Venda aprovada!</span>
+                  <span>Valor: R$ 32,07</span>
+                  <span class="notif-meta">há 3 min • Estrutura automática</span>
+                </li>
+                <li class="notif-item">
+                  <span class="notif-label">Pix gerado</span>
+                  <span>Valor: R$ 27,70</span>
+                  <span class="notif-meta">há 7 min</span>
+                </li>
+                <li class="notif-item">
+                  <span class="notif-label">Venda aprovada!</span>
+                  <span>Valor: R$ 16,02</span>
+                  <span class="notif-meta">há 11 min</span>
+                </li>
+              </ul>
+            </div>
+            <div class="result-caption">
+              “É isso que começa a acontecer quando você monta uma estrutura que trabalha
+              enquanto você vive a sua vida. ☕”
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="result-card">
+            <span class="result-tag">Orgânico</span>
+            <div class="result-phone">
+              <div class="phone-status">
+                <span>09:08 • Kiwify</span>
+                <span>Wi-Fi ▴</span>
+              </div>
+              <div class="phone-title">Domingão rendendo</div>
+              <ul class="notif-list">
+                <li class="notif-item">
+                  <span class="notif-label">Venda aprovada!</span>
+                  <span>Valor: R$ 2,40</span>
+                  <span class="notif-meta">agora mesmo</span>
+                </li>
+                <li class="notif-item">
+                  <span class="notif-label">Pix gerado</span>
+                  <span>Valor: R$ 32,07</span>
+                  <span class="notif-meta">há 8 min</span>
+                </li>
+                <li class="notif-item">
+                  <span class="notif-label">Venda aprovada!</span>
+                  <span>Valor: R$ 11,98</span>
+                  <span class="notif-meta">há 14 min</span>
+                </li>
+              </ul>
+            </div>
+            <div class="result-caption">
+              “Tráfego orgânico mandando bom dia enquanto o resto ainda está acordando. ☕♻️”
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="result-card">
+            <span class="result-tag">Gráfico de receita</span>
+            <div class="result-phone">
+              <div class="phone-status">
+                <span>Visão geral</span>
+                <span>7 dias ▾</span>
+              </div>
+              <div class="phone-title">Receita • R$ 752,38</div>
+              <ul class="notif-list">
+                <li class="notif-item">
+                  <span class="notif-label">Meta batida</span>
+                  <span>Estratégia: Conteúdo + oferta simples</span>
+                  <span class="notif-meta">Taxa de conversão acima da média</span>
+                </li>
+                <li class="notif-item">
+                  <span class="notif-label">Pico do dia</span>
+                  <span>Sequência de 9 vendas em 1 noite</span>
+                  <span class="notif-meta">Horário validado</span>
+                </li>
+              </ul>
+            </div>
+            <div class="result-caption">
+              “Quando você entende o jogo, o gráfico deixa de ser sorte e passa a ser consequência.”
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="result-card">
+            <span class="result-tag">Tela travada de vendas</span>
+            <div class="result-phone">
+              <div class="phone-status">
+                <span>Central de notificações</span>
+                <span>Não perturbe</span>
+              </div>
+              <div class="phone-title">Sequência de aprovações</div>
+              <ul class="notif-list">
+                <li class="notif-item">
+                  <span class="notif-label">Venda aprovada!</span>
+                  <span>Valor: R$ 143,68</span>
+                  <span class="notif-meta">há 53 min</span>
+                </li>
+                <li class="notif-item">
+                  <span class="notif-label">Venda aprovada!</span>
+                  <span>Valor: R$ 143,68</span>
+                  <span class="notif-meta">há 1 h 03 min</span>
+                </li>
+                <li class="notif-item">
+                  <span class="notif-label">Pix gerado</span>
+                  <span>Valor: R$ 143,68</span>
+                  <span class="notif-meta">há 1 h 21 min</span>
+                </li>
+              </ul>
+            </div>
+            <div class="result-caption">
+              “Quando o sistema está rodando certo, a tela parece travada em ‘Venda aprovada’. 📈”
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="planos">
+        <h2>Escolha sua evolução</h2>
+
+        <div class="card-plan">
+          <h3>🔥 Oferta principal — Mentalidade Milionária Completa</h3>
+          <div class="price">R$ 29,98</div>
+          <p>
+            A metodologia completa para construir disciplina, clareza e rotina
+            de execução. Do zero até a constância, em passos aplicáveis.
+          </p>
+          <a class="btn-plan" href="https://pay.cakto.com.br/4vmoudi_591503" target="_blank">
+            Acessar oferta completa
+          </a>
+        </div>
+
+        <div class="card-plan">
+          <h3>💎 Mini oferta — Começo rápido</h3>
+          <div class="price">R$ 19,98</div>
+          <p>
+            Um atalho direto para quem quer começar hoje. Foco nos passos
+            essenciais para sair da inércia e entrar em ação.
+          </p>
+          <a class="btn-plan" href="https://pay.cakto.com.br/oe665n9" target="_blank">
+            Começar agora
+          </a>
+        </div>
+
+        <div class="card-plan">
+          <h3>🚀 Pack de vídeos motivacionais</h3>
+          <div class="price">R$ 9,99</div>
+          <p>
+            Vídeos exclusivos para reforçar sua mentalidade e manter o foco
+            durante o dia. Use como combustível para a rotina.
+          </p>
+          <a class="btn-plan" href="https://pay.cakto.com.br/3dqovsu_546062" target="_blank">
+            Baixar o pack
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        © 2025 • Mentalidade Milionária — Todos os direitos reservados.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
